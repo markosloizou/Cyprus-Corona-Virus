@@ -11,11 +11,12 @@ To test this hypothesis data until the second week of April are needed. I will a
 The best (based on its R2 score) model fitting to the data was a GP followed by a linear model and finally an exponential model. Predictions using these models for the 245h of March were
 
 GP: 
->  138.82   95% Confidence interval: [134.4,143.2]
-New cases using GP
+>  138.82 [134.4,143.2]  
+
+New cases using GP  
 > 10.65 [6.0,15.3]
 
-> Prediction for tomorrow using exponential fit: 156.4
+> Prediction for tomorrow using exponential fit: 156.4  
 > Prediction for tomorrow using Linear fit: 118.8
 
 Note that the number of new cases predicted from the GP model is lower than the total number of cases predicted from another GP model. This is because the number of new cases every day is a much more noisy time series than the total number of cases. 

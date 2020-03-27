@@ -24,6 +24,7 @@ dates = np.array([  '2020-03-08',
 total_cases = np.array([0,2,2,6,10,21,26,33,46,49,58,67,75,84,95,116,124,132,146], dtype='intc')
 ##new cases each day
 daily_diff = np.insert(np.diff(total_cases),0,total_cases[0],axis=0)
+daily_cases = daily_diff
 daily_percentage_increase = np.diff(total_cases) / total_cases[1:] * 100
 
 

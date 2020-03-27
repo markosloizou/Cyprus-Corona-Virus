@@ -23,6 +23,10 @@ dates = np.array([  '2020-03-08',
 
 total_cases = np.array([0,2,2,6,10,21,26,33,46,49,58,67,75,84,95,116,124,132,146], dtype='intc')
 ##new cases each day
+daily_diff = np.insert(np.diff(total_cases),0,total_cases[0],axis=0)
+daily_percentage_increase = np.diff(total_cases) / total_cases[1:] * 100
+
+
 
 from_hospitals = np.array([0,
                            0,#  09/3/2020 
@@ -96,8 +100,22 @@ new_cases = np.array([0, #  09/3/2020
 
 
 ##from quarantine includes people that were put in guarantin due to close contacts with known cases
-dates_of_preventive_measures = np.array(['2020-03-14'], dtype='datetime64')
+dates_of_preventive_measures = np.array(['2020-03-14', '2020-03-24'], dtype='datetime64')
+
+social_distancing = np.zeros(len(dates))
+social_distancing[dates >= dates_of_preventive_measures[0]] = social_distancing[dates >= dates_of_preventive_measures[0]] + 1
+
+lockdown = np.zeros(len(dates))
+lockdown[dates >=dates_of_preventive_measures[1]] = lockdown[dates >= dates_of_preventive_measures[1]] + 2
+
 
 # MEASURES TAKEN
 
 # 14-3-2020 Cafes, restaurants, pubs etc close 
+# 24-3-1010 LOCKDOWN
+
+measures = np.zeros(len(dates))
+for d in dates_of_preventive_measures:
+    print(d)
+    print(np.where(dates >= d))
+    measures[dates >= d] = measures[dates>=d] + 1

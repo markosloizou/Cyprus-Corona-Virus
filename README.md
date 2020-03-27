@@ -6,6 +6,21 @@ The measures taken by the Cyrpiot goverment was first to urge people to self iso
 
 To test this hypothesis data until the second week of April are needed. I will add daily updates for the predictions of the next day using  different models and by the end of March I will try to answer what is the correlation between the first set of measures and the number of new cases.
 
+
+## March 27
+
+The R2 score of the exponential fit is now better than that of the Linear fit. 
+
+GP: 
+> 172.8 [169.2, 176.5]
+
+GP New Cases:
+> 12.0 [7.4,16.6]
+
+>Prediction for tomorrow using exponential fit: 179.0
+
+>Prediction for tomorrow using Linear fit: 153.7
+
 ## March 26
 GP: 
 > 152.6 [148.1, 157.2]
@@ -17,6 +32,7 @@ GP New Cases:
 
 >Prediction for tomorrow using Linear fit: 141.2
 
+The total number of cases for March 26 was **162**, 16 new cases
 
 
 ## March 25

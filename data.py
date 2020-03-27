@@ -18,10 +18,11 @@ dates = np.array([  '2020-03-08',
                     '2020-03-23',
                     '2020-03-24',
                     '2020-03-25',
-                    '2020-03-26'
+                    '2020-03-26',
+                    '2020-03-27'
                  ], dtype='datetime64')
 
-total_cases = np.array([0,2,2,6,10,21,26,33,46,49,58,67,75,84,95,116,124,132,146], dtype='intc')
+total_cases = np.array([0,2,2,6,10,21,26,33,46,49,58,67,75,84,95,116,124,132,146, 162], dtype='intc')
 ##new cases each day
 daily_diff = np.insert(np.diff(total_cases),0,total_cases[0],axis=0)
 daily_cases = daily_diff
@@ -47,7 +48,8 @@ from_hospitals = np.array([0,
                            3, #23/3/20
                            0,
                            0,
-                           1
+                           1,
+                           0
                           ], 
                           dtype='intc') #includes medical personel working there
 
@@ -71,7 +73,8 @@ from_travel = np.array([ 0,
                         6,   #23/3/20
                         2,
                         2,
-                        4
+                        4,
+                        1,
                        ],
                       dtype='intc')
 
@@ -95,7 +98,8 @@ new_cases = np.array([0, #  09/3/2020
                       12, #23/3/20
                       6,
                       6,
-                      9
+                      9,
+                      15
                      ],
                      dtype='intc')
 

@@ -6,9 +6,11 @@ The measures taken by the Cyrpiot goverment was first to urge people to self iso
 
 To test this hypothesis data until the second week of April are needed. I will add daily updates for the predictions of the next day using  different models and by the end of March I will try to answer what is the correlation between the first set of measures and the number of new cases.
 
-# Correlation between measures and daily percentage increase of cases
+# Correlation and Causality between measures and daily percentage increase of cases
 
 There is some early hints that there is negative correlation between the govermental measures against the virus and the daily percentage increase in cases. Meaning that they measures do have some effect. However more data are neede for more concrete results. 
+
+Granger's causality also seems to be statistically significant between the measures and the daily percentage increase. 
 
 
 ## March 27

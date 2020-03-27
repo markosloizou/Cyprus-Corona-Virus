@@ -117,6 +117,6 @@ lockdown[dates >=dates_of_preventive_measures[1]] = lockdown[dates >= dates_of_p
 
 measures = np.zeros(len(dates))
 for d in dates_of_preventive_measures:
-    print(d)
-    print(np.where(dates >= d))
+    #print(d)
+    #print(np.where(dates >= d))
     measures[dates >= d] = measures[dates>=d] + 1

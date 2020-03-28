@@ -13,6 +13,10 @@ There is some early hints that there is negative correlation between the goverme
 Granger's causality also seems to be statistically significant between the measures and the daily percentage increase. 
 
 
+# SIR model
+
+ SIR is a model mades up from 3 differential equations describing the rate of change of the number of susceptible , infected and recovered(meaning not susceptible or infected, this number includes the deceased). The solution of the model depends on the initial conditions and the transmitivity and recovery rate of the virus. The initial conditions used are the conditions in Cyprus when the outbreak begun. The transmitivity and recovery rate are optimized so that the solution of the system of equations represent the growth of the epidemic in Cyprus. Due to the limited amount fitting the parameters cannot be done accureately. 
+
 ## March 27
 
 The R2 score of the exponential fit is now better than that of the Linear fit. 

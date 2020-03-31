@@ -6,6 +6,74 @@ The measures taken by the Cyrpiot goverment was first to urge people to self iso
 
 To test this hypothesis data until the second week of April are needed. I will add daily updates for the predictions of the next day using  different models and by the end of March I will try to answer what is the correlation between the first set of measures and the number of new cases.
 
+# Correlation and Causality between measures and daily percentage increase of cases
+
+There is some early hints that there is negative correlation between the govermental measures against the virus and the daily percentage increase in cases. Meaning that they measures do have some effect. However more data are neede for more concrete results. 
+
+Granger's causality also seems to be statistically significant between the measures and the daily percentage increase. 
+
+
+# SIR model
+
+ SIR is a model mades up from 3 differential equations describing the rate of change of the number of susceptible , infected and recovered(meaning not susceptible or infected, this number includes the deceased). The solution of the model depends on the initial conditions and the transmitivity and recovery rate of the virus. The initial conditions used are the conditions in Cyprus when the outbreak begun. The transmitivity and recovery rate are optimized so that the solution of the system of equations represent the growth of the epidemic in Cyprus. Due to the limited amount fitting the parameters cannot be done accureately. 
+ 
+ # Other Models
+ 
+ Added another file comparing some basic models of growth. An exponential fit, a sigmoid fit and an epsilon exponential f(t)=a * e^( b*eps^(-ct) )
+ 
+ ## March 31
+
+GP: 
+> 289.0 [283.1, 294.9]
+
+GP New Cases:
+> 23.8 [17.6,30.1]
+
+>Prediction for tomorrow using exponential fit: 281.2
+
+>Prediction for tomorrow using Linear fit: 222.2
+ 
+## March 30
+
+GP: 
+> 254.4 [248.3, 260.4]
+
+GP New Cases:
+> 20.3 [13.9,36.7]
+
+>Prediction for tomorrow using exponential fit: 249.9
+
+>Prediction for tomorrow using Linear fit: 202.1
+
+The total number of cases for March 31 was **262**, 32 new cases
+
+## March 29
+
+GP: 
+> 247.9 [240.2, 253.8]
+
+GP New Cases:
+> 24.5 [18.2,30.7]
+
+>Prediction for tomorrow using exponential fit: 224.6
+
+>Prediction for tomorrow using Linear fit: 184.7
+
+The total number of cases for March 30 was **230**, 16 new cases
+ 
+ ## March 28
+
+GP: 
+> 189.9 [186.2, 193.5]
+
+GP New Cases:
+> 13.8 [9.3,18.3]
+
+>Prediction for tomorrow using exponential fit:  196.1
+
+>Prediction for tomorrow using Linear fit: 167.2
+
+The total number of cases for March 29 was **214**, 35 new cases. Probably an outlier as a single person infected 15
 
 ## March 27
 
@@ -21,6 +89,8 @@ GP New Cases:
 
 >Prediction for tomorrow using Linear fit: 153.7
 
+The total number of cases for March 28 was **179**, 17 new cases
+
 ## March 26
 GP: 
 > 152.6 [148.1, 157.2]
@@ -32,7 +102,7 @@ GP New Cases:
 
 >Prediction for tomorrow using Linear fit: 141.2
 
-The total number of cases for March 26 was **162**, 16 new cases
+The total number of cases for March 27 was **162**, 16 new cases
 
 
 ## March 25

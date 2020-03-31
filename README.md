@@ -17,6 +17,22 @@ Granger's causality also seems to be statistically significant between the measu
 
  SIR is a model mades up from 3 differential equations describing the rate of change of the number of susceptible , infected and recovered(meaning not susceptible or infected, this number includes the deceased). The solution of the model depends on the initial conditions and the transmitivity and recovery rate of the virus. The initial conditions used are the conditions in Cyprus when the outbreak begun. The transmitivity and recovery rate are optimized so that the solution of the system of equations represent the growth of the epidemic in Cyprus. Due to the limited amount fitting the parameters cannot be done accureately. 
  
+ # Other Models
+ 
+ Added another file comparing some basic models of growth. An exponential fit, a sigmoid fit and an epsilon exponential f(t)=a * e^( b*eps^(-ct) )
+ 
+ ## March 31
+
+GP: 
+> 289.0 [283.1, 294.9]
+
+GP New Cases:
+> 23.8 [17.6,30.1]
+
+>Prediction for tomorrow using exponential fit: 281.2
+
+>Prediction for tomorrow using Linear fit: 222.2
+ 
 ## March 30
 
 GP: 

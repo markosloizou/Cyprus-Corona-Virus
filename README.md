@@ -17,7 +17,7 @@ Granger's causality also seems to be statistically significant between the measu
 
  SIR is a model mades up from 3 differential equations describing the rate of change of the number of susceptible , infected and recovered(meaning not susceptible or infected, this number includes the deceased). The solution of the model depends on the initial conditions and the transmitivity and recovery rate of the virus. The initial conditions used are the conditions in Cyprus when the outbreak begun. The transmitivity and recovery rate are optimized so that the solution of the system of equations represent the growth of the epidemic in Cyprus. Due to the limited amount fitting the parameters cannot be done accureately. 
  
-## March 29
+## March 30
 
 GP: 
 > 254.4 [248.3, 260.4]
@@ -29,6 +29,7 @@ GP New Cases:
 
 >Prediction for tomorrow using Linear fit: 202.1
 
+The total number of cases for March 31 was **262**, 32 new cases
 
 ## March 29
 
@@ -42,7 +43,7 @@ GP New Cases:
 
 >Prediction for tomorrow using Linear fit: 184.7
 
-The total number of cases for March 26 was **230**, 16 new cases
+The total number of cases for March 30 was **230**, 16 new cases
  
  ## March 28
 
@@ -56,7 +57,7 @@ GP New Cases:
 
 >Prediction for tomorrow using Linear fit: 167.2
 
-The total number of cases for March 26 was **214**, 35 new cases. Probably an outlier as a single person infected 15
+The total number of cases for March 29 was **214**, 35 new cases. Probably an outlier as a single person infected 15
 
 ## March 27
 
@@ -72,7 +73,7 @@ GP New Cases:
 
 >Prediction for tomorrow using Linear fit: 153.7
 
-The total number of cases for March 26 was **179**, 17 new cases
+The total number of cases for March 28 was **179**, 17 new cases
 
 ## March 26
 GP: 
@@ -85,7 +86,7 @@ GP New Cases:
 
 >Prediction for tomorrow using Linear fit: 141.2
 
-The total number of cases for March 26 was **162**, 16 new cases
+The total number of cases for March 27 was **162**, 16 new cases
 
 
 ## March 25
